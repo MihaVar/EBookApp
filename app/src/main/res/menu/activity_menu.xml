@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:title="Home"
+        android:title="@string/Home"
         android:id="@+id/home"
         android:icon="@drawable/ic_home" />
     <item
-        android:title="Share"
+        android:title="@string/Share"
         android:id="@+id/share"
         android:icon="@drawable/ic_share" />
     <item
-        android:title="Rate"
+        android:title="@string/Rate"
         android:id="@+id/rate"
         android:icon="@drawable/ic_rate" />
 
