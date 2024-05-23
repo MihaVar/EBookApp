@@ -6,4 +6,5 @@
     <string name="Home">Home</string>
     <string name="Share">Share</string>
     <string name="Rate">Rate</string>
+    <string name="title_activity_pdf_reader">PdfReaderActivity</string>
 </resources>

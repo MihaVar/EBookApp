@@ -1,6 +1,7 @@
 package com.duikt.ebookapp.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.duikt.ebookapp.PdfReaderAcitivity;
 import com.duikt.ebookapp.R;
 import com.duikt.ebookapp.models.SubjectModel;
 
@@ -40,6 +42,15 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.viewHold
 
         holder.subjectName.setText(model.getSubjectName());
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, PdfReaderAcitivity.class);
+                intent.putExtra("name", model.getSubjectName());
+                intent.putExtra("position", position);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
