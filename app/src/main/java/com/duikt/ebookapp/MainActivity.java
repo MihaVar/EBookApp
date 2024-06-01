@@ -54,12 +54,12 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager manager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(manager);
 
-        list.add(new SubjectModel("Chapter 1"));
-        list.add(new SubjectModel("Chapter 2"));
-        list.add(new SubjectModel("Chapter 3"));
-        list.add(new SubjectModel("Chapter 4"));
-        list.add(new SubjectModel("Chapter 5"));
-        list.add(new SubjectModel("Chapter 6"));
+        list.add(new SubjectModel("Іван Нечуй-Левицький - Кайдашева сім'я"));
+        list.add(new SubjectModel("Іван Багряний - Тигролови"));
+        list.add(new SubjectModel("Книга 3"));
+        list.add(new SubjectModel("Книга 4"));
+        list.add(new SubjectModel("Книга 5"));
+        list.add(new SubjectModel("Книга 6"));
         list.add(new SubjectModel("Chapter 7"));
         list.add(new SubjectModel("Chapter 8"));
         list.add(new SubjectModel("Chapter 9"));
