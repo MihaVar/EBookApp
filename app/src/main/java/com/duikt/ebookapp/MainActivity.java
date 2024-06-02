@@ -1,5 +1,7 @@
 package com.duikt.ebookapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,7 +12,6 @@ import com.duikt.ebookapp.R;
 
 import androidx.activity.EdgeToEdge;
 import androidx.activity.OnBackPressedCallback;
-import androidx.activity.OnBackPressedDispatcher;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -60,9 +61,8 @@ public class MainActivity extends AppCompatActivity {
         list.add(new SubjectModel("Книга 4"));
         list.add(new SubjectModel("Книга 5"));
         list.add(new SubjectModel("Книга 6"));
-        list.add(new SubjectModel("Chapter 7"));
-        list.add(new SubjectModel("Chapter 8"));
-        list.add(new SubjectModel("Chapter 9"));
+        list.add(new SubjectModel("Книга 7"));
+        list.add(new SubjectModel("Книга 8"));
 
         adapter = new SubjectAdapter(this,list);
         recyclerView.setAdapter(adapter);
@@ -91,11 +91,17 @@ public class MainActivity extends AppCompatActivity {
                         drawerLayout.closeDrawer(GravityCompat.START);
 
                     case R.id.share:
-                        Toast.makeText(MainActivity.this, "share", Toast.LENGTH_SHORT).show();
+                        String shareText = "Я використовую електронну бібліотеку українських творів";
+                        
+                        Intent intent = new Intent(Intent.ACTION_SEND);
+                        intent.setType("text/plain");
+                        intent.putExtra(Intent.EXTRA_TEXT,shareText);
+                        startActivity(intent);
+
                         drawerLayout.closeDrawer(GravityCompat.START);
 
                     case R.id.rate:
-                        Toast.makeText(MainActivity.this, "rate", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com")));
                         drawerLayout.closeDrawer(GravityCompat.START);
                 }
 

@@ -12,6 +12,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="36dp"
         app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +25,7 @@
             android:layout_gravity="center"
             android:fontFamily="monospace"
             android:text="Chapter 1"
+            android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp" />
     </androidx.cardview.widget.CardView>

@@ -7,4 +7,5 @@
     <string name="Share">Share</string>
     <string name="Rate">Rate</string>
     <string name="title_activity_pdf_reader">PdfReaderActivity</string>
+    <string name="chapter_1">Chapter 1</string>
 </resources>
