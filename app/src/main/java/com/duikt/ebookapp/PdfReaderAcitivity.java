@@ -15,6 +15,7 @@ public class PdfReaderAcitivity extends AppCompatActivity {
 
     PDFView pdfView;
     TextView chapterName;
+    TextView currentPageTextView;
     int savedPage;
     int position;
     String chapter;
@@ -54,6 +55,7 @@ public class PdfReaderAcitivity extends AppCompatActivity {
 
         pdfView = findViewById(R.id.pdfView);
         chapterName = findViewById(R.id.chapterNames);
+        currentPageTextView = findViewById(R.id.currentPageTextView);
 
         pdfView.fromAsset(pdfFileName)
                 .defaultPage(savedPage)
@@ -62,6 +64,7 @@ public class PdfReaderAcitivity extends AppCompatActivity {
                     public void onPageChanged(int page, int pageCount) {
                         savedPage = page;
                         storePreferences(); // Save preferences every time the page changes
+                        currentPageTextView.setText("Page:" + (page + 1));
                     }
                 })
                 .load();

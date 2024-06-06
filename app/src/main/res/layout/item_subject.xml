@@ -8,15 +8,26 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="36dp"
+        android:layout_marginBottom="18dp"
+        android:paddingBottom="48dp"
         app:cardCornerRadius="10dp"
+        app:contentPaddingBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/subjectImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="484dp"
+            android:translationX="0dp"
+            android:translationY="-250dp"
+            tools:srcCompat="@drawable/kaydasheva_simya" />
 
         <TextView
             android:id="@+id/chapterName"
@@ -28,5 +39,6 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp" />
+
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

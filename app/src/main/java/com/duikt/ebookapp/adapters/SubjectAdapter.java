@@ -8,13 +8,13 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.utils.widget.ImageFilterView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.duikt.ebookapp.PdfReaderAcitivity;
 import com.duikt.ebookapp.R;
 import com.duikt.ebookapp.models.SubjectModel;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -41,6 +41,7 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.viewHold
         SubjectModel model = list.get(position);
 
         holder.subjectName.setText(model.getSubjectName());
+        holder.subjectImage.setImageResource(model.getSubjectImage());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,9 +61,11 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.viewHold
 
     public class viewHolder extends RecyclerView.ViewHolder {
         TextView subjectName;
+        ImageFilterView subjectImage;
         public viewHolder(@NonNull View itemView) {
             super(itemView);
             subjectName = itemView.findViewById(R.id.chapterName);
+            subjectImage = itemView.findViewById(R.id.subjectImageView);
         }
     }
 }
