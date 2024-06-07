@@ -64,7 +64,7 @@ public class PdfReaderAcitivity extends AppCompatActivity {
                     public void onPageChanged(int page, int pageCount) {
                         savedPage = page;
                         storePreferences(); // Save preferences every time the page changes
-                        currentPageTextView.setText("Page:" + (page + 1));
+                        currentPageTextView.setText("Ст. " + (page + 1));
                     }
                 })
                 .load();
@@ -90,6 +90,22 @@ public class PdfReaderAcitivity extends AppCompatActivity {
                 return "kaydasheva_simya.pdf";
             case 1:
                 return "tyhrolovy.pdf";
+            case 2:
+                return "kaminnyy_khrest.pdf";
+            case 3:
+                return "chorna_rada.pdf";
+            case 4:
+                return "haydamaky.pdf";
+            case 5:
+                return "eneyida.pdf";
+            case 6:
+                return "toreadory_z_vasiukivky.pdf";
+            case 7:
+                return "ya_romantyka.pdf";
+            case 8:
+                return "mayster_korablia.pdf";
+            case 9:
+                return "tini_zabutykh_predkiv.pdf";
             default:
                 return "";
         }

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:title="@string/Home"
+        android:title="Головна сторінка"
         android:id="@+id/home"
         android:icon="@drawable/ic_home" />
     <item
-        android:title="@string/Share"
+        android:title="Поділитися"
         android:id="@+id/share"
         android:icon="@drawable/ic_share" />
     <item
-        android:title="@string/Rate"
+        android:title="Оцінити"
         android:id="@+id/rate"
         android:icon="@drawable/ic_rate" />
 

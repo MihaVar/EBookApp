@@ -57,10 +57,14 @@ public class MainActivity extends AppCompatActivity {
 
         list.add(new SubjectModel("Іван Нечуй-Левицький - Кайдашева сім'я", R.drawable.kaydasheva_simya));
         list.add(new SubjectModel("Іван Багряний - Тигролови", R.drawable.tyhrolovy));
-        list.add(new SubjectModel("Книга 3", R.drawable.tyhrolovy));
-        list.add(new SubjectModel("Книга 4", R.drawable.tyhrolovy));
-        list.add(new SubjectModel("Книга 5", R.drawable.tyhrolovy));
-        list.add(new SubjectModel("Книга 6", R.drawable.kaydasheva_simya));
+        list.add(new SubjectModel("Василь Стефаник - Камінний хрест", R.drawable.kaminnyy_khrest));
+        list.add(new SubjectModel("Пантелеймон Куліш - Чорна рада", R.drawable.chorna_rada));
+        list.add(new SubjectModel("Тарас Шевченко - Гайдамаки", R.drawable.haydamaky));
+        list.add(new SubjectModel("Іван Котляревський - Енеїда", R.drawable.eneida));
+        list.add(new SubjectModel("Всеволод Нестайко - Тореадори з Васюківки", R.drawable.toreadory_z_vasiukivky));
+        list.add(new SubjectModel("Микола Хвильовий - Я (Романтика)", R.drawable.ya_romantyka));
+        list.add(new SubjectModel("Юрій Яновський - Майстер корабля", R.drawable.mayster_korablia));
+        list.add(new SubjectModel("Михайло Коцюбинський - Тіні забутих предків", R.drawable.tini_zabutykh_predkiv));
 
         adapter = new SubjectAdapter(this,list);
         recyclerView.setAdapter(adapter);

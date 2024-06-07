@@ -29,16 +29,23 @@
             android:translationY="-250dp"
             tools:srcCompat="@drawable/kaydasheva_simya" />
 
-        <TextView
-            android:id="@+id/chapterName"
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="monospace"
-            android:text="Chapter 1"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
+            app:cardBackgroundColor="#C3FFFFFF">
+
+            <TextView
+                android:id="@+id/chapterName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:text="Chapter 1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </androidx.cardview.widget.CardView>
 
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
